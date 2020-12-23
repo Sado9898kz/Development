@@ -42,4 +42,26 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Internet
+    def okHttp_version = '4.8.0'
+    def retrofit_version = '2.9.0'
+    def coroutines_adapter_version = '0.9.2'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okHttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttp_version"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$coroutines_adapter_version"
+
+    def recyclerView_version = '1.1.0'
+    implementation "androidx.recyclerview:recyclerview:$recyclerView_version"
+
+    //Picasso
+    def picasso_version = '2.5.2'
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+
+    // Coroutines
+    def coroutines_version = '1.4.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
 }
